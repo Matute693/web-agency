@@ -1,0 +1,154 @@
+/* VARIABLES */
+:root {
+    --color-text-body: #525260;
+    --primary-color: #5956e9;
+    --primary-secondary: #FFF;
+}
+
+/* GENERAL STYLES*/
+
+html {
+    /* font-size: 62.5%; */
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: var(--color-text-body);
+}
+
+/* STRUCTURE */
+
+.layout {
+    width: 100%;
+    min-width: 1200px;
+    height: 100%;
+}
+
+
+/* SECTION MENU  */
+.layout__menu {
+    width: 100%;
+    padding: 3rem 3.5rem;
+}
+
+  .menu__navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.navbar__logo {
+    width: 187px;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} 
+
+.navbar__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav__item {
+    position: relative;
+    margin: 0 2.4rem;
+}
+
+.nav__title {
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+    color: var(--color-text-body);
+    transition: all 300ms ease-in-out;
+}
+
+
+.nav__title:hover {
+    color: var(--primary-color);
+}
+
+.nav__title::before {
+    content: "";
+    height: 0.2rem;
+    width: 0% ;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: -0.7rem;
+    left: 0;
+    opacity: 0;
+    transition: all 500ms linear;
+}
+
+.nav__title:hover::before {
+    width: 100%;
+    opacity: 1;
+    transition: all 200ms linear;
+}
+
+
+
+.nav__icon {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 0.2rem;
+    vertical-align: middle;
+}
+
+.nav__submenu {
+    display: block;
+    position: absolute;
+    top: 4.3rem;
+    left: 2rem;
+    min-width: 19rem;
+    padding: 1.5rem 1rem;
+    border-radius: 4px;
+    background-color: var(--primary-secondary);
+    box-shadow: 0px 13px 48px 0 rgba(0, 0, 0, 0.15);
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.submenu__item {
+    opacity: 1;
+    transform: translateX(20px);
+    transition: all 0.1s ease-in-out; 
+}
+
+.submenu__title {
+    display: block;
+    position: relative;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--color-text-body);
+    padding: 0.7rem 1.5rem;
+    transition: all 300ms ease-in-out;
+}
+
+.nav__item:hover>.nav__submenu  {
+    z-index: 999;
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+
+
