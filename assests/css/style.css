@@ -1,8 +1,11 @@
 /* VARIABLES */
 :root {
-    --color-text-body: #525260;
+    --color-text-body: #ffffff;
     --primary-color: #5956e9;
     --primary-secondary: #FFF;
+    --color-banner: #2522BA;
+    --color-text-btn: #0d6efd;
+    --color-bg-btn: #ffdc60
 }
 
 /* GENERAL STYLES*/
@@ -192,7 +195,57 @@ body {
 }
 
 
+/* ESTILOS PARA EL BANNER */
 
+.layout__banner {
+    position: relative;
+    min-height: 60rem;
+    border: 2px solid; 
+    margin: 0 3rem;
+    padding-right: 0;
+    padding-left: 10rem;
+    padding-top: 15rem;
+    padding-bottom: 20rem;
+    width: calc(100% - 6rem);
+    border-radius: 60px;
+    overflow: hidden;
+    background-color: var(--color-banner);  
+}
+
+.banner__content {
+    display: inline-block;
+    width: 50%;
+    padding: 0 1.5rem;  
+    height: 20vh; 
+}
+
+.banner__title {
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    color: var(--primary-secondary);
+    margin-bottom: 5rem;
+}
+
+.banner__btn {
+    top: 25rem;
+    display: inline-block;
+    background-color: var(--primary-secondary);
+    color: var(--color-text-btn);
+    padding: 2rem 4rem;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    text-align: center;
+    box-shadow: 0px 45px 80px -25px var(--primary-color);
+}
+
+.banner__btn:hover {
+    background-color: var(--color-bg-btn);
+    color: var(--color-text-body);
+    transition: all 200ms ease-in-out;
+}
 
 
 
