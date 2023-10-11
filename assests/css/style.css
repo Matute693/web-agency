@@ -561,12 +561,12 @@ body {
 }
 
 .services-shapes--shape1 {
-    top: -80px;
-    right: 80px;
+    top: -75px;
+    right: 70px;
     z-index: -1;
 }
 .services-shapes--shape2 {
-    top: 70px;
+    top: 7%;
     left: 52%;
 }
 
