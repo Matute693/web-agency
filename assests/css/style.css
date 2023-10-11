@@ -259,22 +259,93 @@ body {
     text-align: right;
     right: 0;
     top: 0;
+
+    animation-name: showRight;
+    animation-duration: 1s;
+}
+
+@keyframes showRight {
+    0% {
+        transform: translateX(50%);
+    }
+
+    100% {
+        transform: translateX(0%);       
+    }
 }
 
 .shapes__item--shape2 {
     bottom: 0;
     left: 0;
     z-index: 1;
+
+    animation-name: showLeft;
+    animation-duration: 500ms;
+}
+
+@keyframes showLeft {
+    0% {
+        transform: translateX(-30%);
+    }
+    100% {
+        transform: translate(0%);
+    }
 }
 
 .shapes__item--shape3 {
     top: 34%;
     left: 50%;
+    animation: moveShape3 20s infinite;
+}
+
+@keyframes moveShape3 {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    
+    40% {
+        transform: translateX(50px) translateY(100px);
+        
+    }
+    
+    75% {
+        transform: translateX(450px) translateY(150px);
+        
+    }
+    
+    100% {
+        transform: translateX(0) translateY(0);
+
+    }
 }
 
 .shapes__item--shape4 {
     bottom: 20rem;
     left: 45%;
+    animation: moveShape4 30s infinite;
+
+
+}
+
+@keyframes moveShape4 {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    
+    40% {
+        transform: translateZ(80%);
+        
+    }
+    
+    75% {
+        transform: translateX(90px) translateY(-400px);
+        
+    }
+    
+    100% {
+        transform: translateX(0) translateY(0);
+
+    }
 }
 
 .shapes__item--shape4 .shapes__image {
@@ -285,19 +356,74 @@ body {
 .shapes__item--shape5 {
     bottom: 2rem;
     left: 55%;
+    animation: moveShape5 25s infinite;
+}
+
+@keyframes moveShape5 {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    
+    40% {
+        transform: translateZ(-80%);
+        
+    }
+    
+    75% {
+        transform: translateX(800px);
+        
+    }
+    
+    100% {
+        transform: translateX(0) translateY(0);
+
+    }
 }
 
 .shapes__item--shape6 {
     bottom: 10rem;
     left: 40%;
+    animation: moveShape6 20s infinite;
+}
+
+@keyframes moveShape6 {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    
+    40% {
+        transform: translateX(230px) translateY(-250px);
+        
+    }
+    
+    75% {
+        transform: translateX(250px);
+        
+    }
+    
+    100% {
+        transform: translateX(0) translateY(0);
+
+    }
 }
 
 .shapes__item--shape7 {
     top: 0;
     right: 10rem;
     z-index: 1;
+
+    animation-name: showTop;
+    animation-duration: 1s;
 }
 
+@keyframes showTop {
+    0% {
+        transform: translateY(-30%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
 
 
 
