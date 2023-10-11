@@ -5,7 +5,9 @@
     --primary-secondary: #FFF;
     --color-banner: #2522BA;
     --color-text-btn: #0d6efd;
-    --color-bg-btn: #ffdc60
+    --color-bg-btn: #ffdc60;
+    --color-service-subtitle: #c75c6f;
+    --color-title: #292930;
 }
 
 /* GENERAL STYLES*/
@@ -424,6 +426,57 @@ body {
         transform: translateY(0%);
     }
 }
+
+/* ESTILOS SERVICIOS */
+
+.layout__services {
+    position: relative;
+    margin: 5rem 4rem;
+    z-index: 1;
+}
+
+.services__grid {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.services__header {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.services__subtitle {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: var(--color-service-subtitle);
+}
+
+.services__title {
+    font-size: 6.7rem;
+    line-height: 1.2;
+    font-weight: 500;
+    color: var(--color-title);
+}
+
+.services__list {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.services__service {
+    width: 33%;
+    padding: 5rem 4rem;
+    border-radius: 3rem;
+    margin-bottom: 4rem;
+    background: linear-gradient(180deg, #f8f8f8, rgba(255, 255, 255, 0));
+    background-color: var(--primary-secondary);
+    border-image-source:  linear-gradient(90deg, #f8f8f8, rgba(255, 255, 255, 0));
+
+}
+
+
 
 
 
