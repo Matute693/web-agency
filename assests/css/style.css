@@ -1,5 +1,7 @@
 /* VARIABLES */
 :root {
+    --mx-width: 1320px;
+
     --color-text-body: #525260;
     --primary-color: #5956e9;
     --primary-secondary: #FFF;
@@ -9,6 +11,7 @@
     --color-service-subtitle: #c75c6f;
     --color-title: #292930;
     --color-bg-card-services: #f8f8f8;
+    --color-bg-projects: #ecf2f6;
 }
 
 /* GENERAL STYLES*/
@@ -437,7 +440,7 @@ body {
 }
 
 .services__grid {
-    max-width: 1320px;
+    max-width: var(--mx-width);
     margin: 0 auto;
     z-index: 3;
 }
@@ -447,14 +450,16 @@ body {
     margin-bottom: 2rem;
 }
 
-.services__subtitle {
+.services__subtitle,
+.projects__subtitle {
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 1.5rem;
     color: var(--color-service-subtitle);
 }
 
-.services__title {
+.services__title,
+.projects__title {
     font-size: 6.7rem;
     line-height: 1.2;
     font-weight: 500;
@@ -575,7 +580,105 @@ body {
     left: 140px;
 }
 
+/* ESTILOS DE PROYECTOS */
+.layout__projects {
+    position: relative;
+    background-color: var(--color-bg-projects);
+    padding: 14rem 10rem;
+}
 
+.projects__grid {
+    max-width: var(--mx-width);
+    margin: 0 auto;
+}
 
+.projects__header {
+    margin-bottom: 4rem;
+}
 
+.projects__subtitle {
+    text-transform: capitalize;
+}
 
+.projects__categories {
+    margin-bottom: 5.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 7rem;
+}
+
+.categories__item {
+    position: relative;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0.8rem 0;
+}
+
+.categories__item--active,
+.categories__item:hover {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.projects__all {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem 7rem;
+}
+
+.project__container-img {
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+    overflow: hidden;
+}
+
+.project__img {
+    width: 100%;
+    transition: all 200ms linear;
+}
+
+.projects__project:hover .project__img {
+    transform: scale(1.2);
+}
+.projects__project {
+    background-color: var(--color-bg-card-services);
+    border-radius: 0 0 3px 3px;
+}
+.project__content {
+    margin: 4rem 0 3rem 5rem;
+
+}
+
+.project__link-title {
+    margin-bottom: 1.5rem;
+    font-size: 2.3rem;
+    color: var(--color-title);
+    font-weight: 500;
+}
+
+.project__link-title:hover {
+    color: var(--color-banner);
+    transition: all 300ms ease-in-out;
+}
+
+.project-shapes__item {
+    position: absolute;
+    /* z-index: 5; */
+    pointer-events: none;
+    top: 0;
+}
+
+.project-shapes--shape1 {
+    top: 2%;
+    right: 10%;
+}
+
+.project-shapes--shape2 {
+    right: 45%;
+    top: 6%;
+}
+
+.project-shapes--shape3 {
+    left: 4%;
+    top: 95%;
+}
