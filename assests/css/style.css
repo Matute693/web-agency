@@ -436,6 +436,7 @@ body {
 .layout__services {
     position: relative;
     margin: 14rem 10rem;
+    margin-bottom: 5rem;
     z-index: 2;
 }
 
@@ -617,6 +618,7 @@ body {
 .categories__item--active,
 .categories__item:hover {
     border-bottom: 2px solid var(--primary-color);
+    transition: all 100ms linear;
 }
 
 .projects__all {
