@@ -230,7 +230,8 @@ body {
 }
 
 .banner__title,
-.stats__title {
+.stats__title,
+.clients__title {
     font-size: 5rem;
     font-weight: 500;
     line-height: 5rem;
@@ -457,7 +458,8 @@ body {
 .services__subtitle,
 .projects__subtitle,
 .stats__subtitle,
-.reviews__subtitle {
+.reviews__subtitle,
+.clients__subtitle {
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 1.5rem;
@@ -694,13 +696,15 @@ body {
 
 /* ESTILOS PARA ESTADISTICAS */
 
-.layout__stats {
+.layout__stats,
+.layout__clients {
      background-color: var(--color-bg-dark);
      height: 85vh;
      padding: 14rem 11rem;
 }
 
-.stats__container {
+.stats__container,
+.clients__container {
     max-width: var(--mx-width);
     min-height: 80vh;
     margin: 0 auto;
@@ -787,7 +791,6 @@ body {
     font-size: 2rem;
 }
 
-/* PRueba */
 
 .reviews__container {
     padding: 3rem 3rem;
@@ -832,4 +835,55 @@ body {
 .author__description {
     color: #b0a6a6;
     margin-top: 1.2rem;
+}
+
+/* ESTILOS PARA CLIENTS */
+
+.layout__clients {
+    position: relative;
+}
+
+.clients__header {
+    width: 40%;
+}
+
+.clients__title {
+    margin-bottom: 3rem;
+}
+
+.clients__description {
+    color: var(--primary-secondary);
+    opacity: 0.6;
+    margin-bottom: 4rem;
+}
+
+.clients__logos {
+    display: flex;
+    margin-top: 5rem;
+    margin: o auto;
+
+}
+
+.clients__item {
+    width: calc(25% - 1rem);
+}
+
+.clients__img {
+    filter: grayscale(100%);
+    opacity: 0.3;
+    transition: all 300ms ease-in-out;
+}
+
+.clients__item:hover > .clients__img {
+    opacity: 1;
+    filter: grayscale(0%);
+    cursor: pointer;
+} 
+
+.client-shapes__item {
+    position: absolute;
+    z-index: 5;
+    top: 5rem;
+    right: 0;
+    color: var(--color-bg-projects);
 }
