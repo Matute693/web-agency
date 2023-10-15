@@ -14,6 +14,7 @@
     --color-bg-projects: #ecf2f6;
     --color-bg-dark: #27272E;
     --color-hover-dark: #303035;
+    --color-borders: #e3e6e9
 }
 
 /* GENERAL STYLES*/
@@ -459,7 +460,8 @@ body {
 .projects__subtitle,
 .stats__subtitle,
 .reviews__subtitle,
-.clients__subtitle {
+.clients__subtitle,
+.news__subtitle {
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 1.5rem;
@@ -468,8 +470,9 @@ body {
 
 .services__title,
 .projects__title,
-.reviews__title {
-    font-size: 6.7rem;
+.reviews__title,
+.news__title {
+    font-size: 6.2rem;
     line-height: 1.2;
     font-weight: 500;
     color: var(--color-title);
@@ -508,10 +511,14 @@ body {
     flex-basis: 1;
 }
 
-.service__title {
+.service__title,
+.project__title,
+.stats__title,
+.reviews__title
+ {
     color: var(--color-text-body);
     margin-bottom: 1.2rem;
-    font-size: 2.4rem;
+    font-size: 2em;
     font-weight: 500;
     line-height: 1.4;
 }
@@ -710,7 +717,8 @@ body {
     margin: 0 auto;
 }
 
-.stats__header {
+.stats__header,
+.news__header {
     text-align: center;
 }
 
@@ -719,7 +727,8 @@ body {
     margin-bottom: 3rem;
 }
 
-.stats__description {
+.stats__description,
+.news__description {
     font-size: 1.8rem;
     width: 50%;
     margin: 0 auto;
@@ -782,13 +791,14 @@ body {
 
 .reviews__header {
     text-align: left;
+    padding: 0 4rem;
     margin-bottom: 6rem;
 }
 
 .reviews__description {
     margin: 3rem 0;
     width: 50%;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 
@@ -801,9 +811,12 @@ body {
     margin-bottom: 3rem;
 }
 
-.review__description {
+.review__description,
+.news__description {
+    font-size: 2.4rem;
+    font-weight: 500;
     margin-bottom: 4rem;
-    line-height: 2rem;
+    line-height: 1.2;
     color: var(--color-text-body);
 }
 
@@ -837,6 +850,11 @@ body {
     margin-top: 1.2rem;
 }
 
+.review-shapes__img { 
+    position: absolute;
+    top: 20%;
+    right: 36%;
+}
 /* ESTILOS PARA CLIENTS */
 
 .layout__clients {
@@ -886,4 +904,108 @@ body {
     top: 5rem;
     right: 0;
     color: var(--color-bg-projects);
+}
+
+/* ESTILOS LAST NEWS */
+
+.layout__news {
+    position: relative;
+    z-index: 1;
+    padding: 14rem 0;
+}
+
+.news__container {
+    max-width: var(--mx-width);
+    margin: 0 auto;
+}
+
+
+.new__content {
+    flex-basis: 50%;
+    text-align: left;
+    padding: 2rem 2rem;
+}
+
+.new__link {
+    line-height: 2.9rem;
+    color: var(--color-bg-dark);
+    font-weight: bold;
+    margin-bottom: 2.3rem;
+}
+
+.news__title {
+    margin-bottom: 3rem;
+}
+
+.new__description {
+    color: var(--color-text-body);
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-bottom: 3rem;
+    margin: 0 auto;
+}
+
+.news__list {
+    display: flex;
+}
+
+
+.news__new {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-top: 4rem;
+    padding: 4rem 2rem 4rem 0;
+    border-top: 1px solid var(--color-borders);
+    border-bottom: 1px solid var(--color-borders);
+    transition: all 200ms ease-in-out;
+}
+
+.news__new:first-child {
+    border-right: 1px solid var(--color-borders);
+    margin-right: 2.5rem;
+}
+
+.news__new:hover {
+    border-top-color: var(--primary-color);
+}
+
+.new__container-img {
+    overflow: hidden;
+    border-radius: 3rem;
+}
+
+.new__img {
+    border-radius: 3rem;
+    transition: all 300ms ease-in-out;
+}
+
+.news__new:hover .new__img {
+    transform: scale(1.1);
+}
+
+.new__title {
+    font-size: 2.4;
+    line-height: 1.4;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: var(--color-title);
+}
+
+.new__more {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-weight: bold;
+}
+
+.new__more:hover {
+    color: var(--primary-color);
+    transition: all 200ms ease-in-out;
+}
+
+.new-shapes--shape1{
+    position: absolute;
+    top: 14rem;
+    z-index: -6;
+    left: 68%;
 }
