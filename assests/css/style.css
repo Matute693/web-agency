@@ -456,7 +456,8 @@ body {
 
 .services__subtitle,
 .projects__subtitle,
-.stats__subtitle {
+.stats__subtitle,
+.reviews__subtitle {
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 1.5rem;
@@ -464,7 +465,8 @@ body {
 }
 
 .services__title,
-.projects__title {
+.projects__title,
+.reviews__title {
     font-size: 6.7rem;
     line-height: 1.2;
     font-weight: 500;
@@ -762,5 +764,72 @@ body {
 
 /* ESTILOS PARA REVIEWS */
 
+.layout__reviews {
+    position: relative;
+    z-index: 1;
+    padding-top: 14rem;
+    padding-bottom: 11rem;
+}
 
+.reviews__grid {
+    max-width: var(--mx-width);
+    margin: 0 auto;
+}
 
+.reviews__header {
+    text-align: left;
+    margin-bottom: 6rem;
+}
+
+.reviews__description {
+    margin: 3rem 0;
+    width: 50%;
+    font-size: 2rem;
+}
+
+/* PRueba */
+
+.reviews__container {
+    padding: 3rem 3rem;
+    display: flex;
+}
+
+.review__img {
+    margin-bottom: 3rem;
+}
+
+.review__description {
+    margin-bottom: 4rem;
+    line-height: 2rem;
+    color: var(--color-text-body);
+}
+
+.review__author {
+    display: flex;
+    gap: 2rem;
+}
+
+.author__img {
+    border-radius: 4rem;
+}
+
+.author__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.author__container-img {
+    height: 5rem;
+    width: 5rem;
+}
+
+.author__name {
+    font-size: 1.8rem;
+    color: var(--color-title);
+    font-weight: 500;
+}
+
+.author__description {
+    color: #b0a6a6;
+    margin-top: 1.2rem;
+}
