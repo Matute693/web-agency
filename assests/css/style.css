@@ -1057,7 +1057,19 @@ body {
     z-index: 1;
     overflow: hidden;
     padding: 14rem 0 10rem 0;
+    /* background-color: var(--primary-color); */
+}
+
+.layout__contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 63rem;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: var(--primary-color);
+    z-index: -1;
 }
 
 .contact__container {
@@ -1080,7 +1092,7 @@ body {
 }
 
 .contact__title {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     margin-bottom: 5.5rem;
     font-size: 6.4rem;
@@ -1089,5 +1101,97 @@ body {
     color: var(--primary-secondary);
 }
 
+.contact__btn {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding: 2.3rem 5.5rem;
+    background-color: var(--primary-secondary);
+    border-radius: 20px;
+    font-weight: 500;
+    text-align: center;
+    transition: all 300ms ease-in-out;
+}
+
+.contact__btn:hover {
+    background-color: var(--color-bg-btn);
+}
+
+.contact__images {
+    position: relative;
+    text-align: center;
+    border-bottom: 1px solid var(--color-borders);
+
+    display: flex;
+}
+
+.contact__thumb {
+    display: inline-block;
+    position: relative;
+}
+
+.contact__thumb--chat {
+    margin-left: -8rem;
+    margin-bottom: -0.8rem;
+}
+
+.contact__thumb--laptop {
+    z-index: 1;
+    margin-left: 10rem;
+}
 
 
+.contact__thumb--mobile {
+    position: absolute;
+    right: 15rem;
+}
+
+
+.backshapes__item {
+    position: absolute;
+    z-index: -1;
+
+}
+
+.backshapes--shape1 {
+    top: 0;
+    left: 32%;
+}
+
+.backshapes--shape2 {
+    top: 18rem;
+    left: 18%;
+    opacity: 0.5;
+    animation: moveShape3 20s infinite;
+}
+
+.backshapes--shape3 {
+    top: 31%;
+    left: 20%;
+    animation: moveShape4 30s infinite;
+}
+
+.backshapes--shape4 {
+    top: 44%;
+    left: 17%;
+    animation: moveShape3 22s infinite;
+}
+
+.backshapes--shape5 {
+    top: 23%;
+    right: 14%;
+    animation: moveShape6 22s infinite;
+}
+
+.backshapes--shape6 {
+    bottom: 40%;
+    left: 15%;
+    animation: moveShape5 22s infinite;
+}
+
+.backshapes--shape7 {
+    top: 23%;
+    left: 23%;
+    animation: moveShape4 22s infinite;
+}
