@@ -1,0 +1,14 @@
+
+@media (max-width: 1600px ) {
+.layout {
+    min-width: 1200px;
+}
+
+.layout__menu {
+    padding: 5rem 6rem;
+}
+
+.services__service {
+        padding: 7rem 5rem;
+    }
+}
