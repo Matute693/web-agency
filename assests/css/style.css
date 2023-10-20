@@ -723,6 +723,8 @@ body {
 }
 
 .stats__title {
+    font-size: 6rem;
+    color: white;
     margin-top: 2rem;
     margin-bottom: 3rem;
 }

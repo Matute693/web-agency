@@ -12,3 +12,27 @@
         padding: 7rem 5rem;
     }
 }
+
+@media( max-width: 1500px ) {
+    .projects__project {
+        flex-basis: 40%;
+        margin: 0 auto;
+    }
+}
+
+@media( min-width: 1199px) and ( max-width: 1400px ) {
+    .services__grid,
+    .projects__grid,
+    .reviews__grid,
+    .news__container,
+    .contact__container,
+    .footer__container {
+        max-width: 100%;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .projects__all {
+        gap: 3rem;
+    }
+}
