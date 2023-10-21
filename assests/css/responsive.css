@@ -135,5 +135,30 @@
         font-size: 4rem;
     }
 
+    .services__list {
+        flex-direction: column;
+    }
+    
+    .services__service  {
+        width: 100%;
+    }
+
+    .services__service--middle {
+        margin-top: 0rem;
+    }
+
+    .services-shapes--shape3 {
+        top: 47%;
+        left: 0;
+        z-index: -2;
+    }
+
+    .services-shapes--shape2 {
+      display: none;
+    }
+
+    .services__service--bottom {
+        margin-top: 10rem;
+    } 
 
 }
