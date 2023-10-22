@@ -499,5 +499,60 @@
         padding-right: 0;
         margin-right: 0;
     } 
+}
 
+@media(max-width: 640px ) {
+    .reviews__grid,
+    .news__container,
+    .contact__container,
+    .footer__container {
+        max-width: 100%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .layout__services {
+        padding-left: 3rem;
+        margin-left: 3rem;
+    }
+
+    .layout__contact::before {
+        height: 75vh;
+    }
+
+    .contact__thumb--chat {
+        margin-right: -1rem;
+        z-index: 3;
+        width: 50%;
+        top: 3rem;
+        left: 0;
+        margin-bottom: -0.8rem;
+        margin-left: 1rem;
+    }
+
+    .contact__thumb--mobile {
+        right: 0rem;
+        top: 5rem;
+        width: 20%;
+    }
+
+    .contact__thumb--laptop {
+        right: 0rem;
+        top: 1rem;
+    }
+
+    .contact__img {
+        width: 80%;
+    }
+
+    .projects__categories {
+        gap: 4rem;
+        flex-wrap: wrap;
+    }
+/* 
+    .fleft__form {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+    } */
 }
