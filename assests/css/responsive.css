@@ -262,4 +262,39 @@
     .footer__container  {
         max-width: 85rem;
     }
+
+    .contact__btn {
+        padding: 1.8rem 3.3rem;
+    }
+
+    .contact__thumb {
+        width: 40rem;
+    }
+
+    .contact__thumb--chat {
+        margin-right: -1rem;
+        z-index: 3;
+        margin-bottom: -0.8rem;
+        margin-left: 1rem;
+    }
+
+    .contact__thumb--mobile {
+        right: -1rem;
+    }
+
+    .contact__thumb--laptop {
+        right: 0rem;
+    }
+
+    .contact__img {
+        width: 100%;
+    }
+
+    .fleft__container {
+
+    }
+
+    .fleft__button {
+        padding: 1rem 2.8rem;
+    }
 }

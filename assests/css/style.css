@@ -1129,13 +1129,13 @@ body {
     position: relative;
 }
 
-.contact__thumb--chat {
-    margin-left: -8rem;
+.contact__thumb--laptop {
+    margin-left: -5rem;
     margin-bottom: -0.8rem;
 }
 
-.contact__thumb--laptop {
-    z-index: 1;
+.contact__thumb--chat {
+    z-index: -1;
     margin-left: 10rem;
 }
 
