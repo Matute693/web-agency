@@ -834,6 +834,7 @@ body {
 .author__content {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
 }
 
 .author__container-img {
