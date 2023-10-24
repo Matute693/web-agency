@@ -94,4 +94,8 @@ body {
     color: var(--color-hover-dark);
 }
 
+.mobile-btn__line {
+    background-color: var(--color-banner);
+}
+
 
