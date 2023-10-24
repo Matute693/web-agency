@@ -1502,3 +1502,35 @@ body {
     font-weight: 500;
     color: var(--color-text-body);
 }
+
+/* STYLE DARK MODE BUTTON  */
+
+.switcher {
+    position: fixed;
+    top: 20rem;
+    left: 0;
+    background-color: var(--primary-color);
+    border-radius: 0 3rem 3rem 0;
+    padding: 1rem;
+    z-index: 15;
+}
+
+.switcher__btn {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    display: flex;
+}
+
+.switcher__icon-dark,
+.switcher__icon-light {
+    color: var(--primary-secondary);
+    font-size: 1.8rem;
+    height: 4rem;
+    width: 4rem;
+    line-height: 3.6rem;
+}
+
+.switcher__icon-dark {
+    display: none;
+}
