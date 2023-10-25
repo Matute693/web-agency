@@ -572,4 +572,8 @@
         gap: 4rem;
         flex-wrap: wrap;
     }
+
+    .review-shapes__img {
+        right: 4rem;
+    }
 }
